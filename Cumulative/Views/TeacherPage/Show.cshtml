@@ -1,0 +1,10 @@
+@model Cumulative.Models.Teacher
+<h1>@Model.TeacherFName @Model.TeacherLName</h1>
+
+<p>Teacher id - @Model.TeacherId</p>
+<p>Employee number - @Model.EmployeeNumber</p>
+<p>Hire date - @Model.HireDate</p>
+<p>Salary - @Model.Salary</p>
+
+<a href="/TeacherPage/Edit/@Model.TeacherId">Edit</a>
+<a href="/TeacherPage/ConfirmDelete/@Model.TeacherId" class="delete btn">Delete this Record</a>
